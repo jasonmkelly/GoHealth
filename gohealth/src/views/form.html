@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>GoHealth Patient Portal</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="forms">
+        <div class="page-header">
+            <h2>Patient Information</h2>
+        </div>
+
+        <form class="form-horizontal well" action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <h3>Patient Demographics</h3>
+                <table class="table-bordered table-striped table-hover" width="600px">
+                    <tr>
+                        <td width="20%"><label class="control-label" for="patient_f_name">First Name</label></td>
+                        <td width="80%"><input type="text" id="patient_f_name" name="patient_f_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="control-label" for="patient_l_name">Last Name</label></td>
+                        <td><input type="text" id="patient_l_name" name="patient_l_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="control-label" for="patient_dob">Date of Birth</label></td>
+                        <td><input type="text" id="patient_dob" name="patient_dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="control-label" for="patient_phone">Phone</label></td>
+                        <td><input type="text" id="patient_phone" name="patient_phone"></td>
+                    </tr>
+                </table>
+
+                <h3>Patient Insurance</h3>
+                <table class="table-bordered table-striped table-hover" width="600px">
+                    <tr>
+                        <td width="20%"><label class="control-label" for="ins_carrier">Insurance Carrier</label></td>
+                        <td width="80%">
+                            <select id="ins_carrier" name="ins_carrier">
+                                <option value="-1">--Select an option--</option>
+                                <option value="aetna">Aetna</option>
+                                <option value="empire_blue_cross_blue_shield">Blue Cross/Blue Shield</option>
+                                <option value="united_health_care">United Health Care</option>
+                                <option value="self">Self</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="control-label" for="ins_id">Insurance ID</label></td>
+                        <td><input type="text" id="ins_id" name="ins_id"></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
